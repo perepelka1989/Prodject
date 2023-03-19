@@ -1,0 +1,32 @@
+.client-box {
+    width: 1146px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 221px;
+    padding: 14px 0 25px;
+}
+
+.client-left-box {
+    width: 548px;
+}
+
+.client-title {
+    font-family: $font-family;
+    @include text(40px,700,normal);
+    line-height: 130%;
+    color:$h1color;
+    margin-bottom: 40px;
+}
+
+.client-dsc {
+    font-family: $font-family;
+    @include text(16px,600,normal);
+    line-height: 160%;
+    color: #FFF;
+    opacity: 0.7;
+    width: 460px;
+}
+
+.client-dsc p {
+    margin-top: 20px;
+}

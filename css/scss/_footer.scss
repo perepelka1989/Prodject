@@ -1,0 +1,91 @@
+.footer {
+    background-color:$footer-bg-color ;
+}
+
+.ftr {
+    display: flex;
+    justify-content: flex-start;
+    padding: 48px 0;
+    gap: 170px;
+}
+
+.information,
+.about-store,
+.communities {
+    width: 362px;
+}
+
+.inform-title,
+.aboutstore-title,
+.communities-title {
+    font-family: $footer-font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+.text {
+    font-family: $footer-font-family;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFF;
+    opacity: 0.6;
+    margin-top: 33px;
+}
+
+.contacts {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 33px;
+}
+
+.mail-box,
+.tel-box,
+.address-box {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-envelope,
+.fa-phone,
+.fa-map-marker {
+    color: #FFF;
+    font-size: 13px;
+    padding-right: 10px;
+}
+
+.mail,
+.tel,
+.address,
+.site  {
+    font-family: $footer-font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFF;
+}
+
+.communities-link {
+    margin-top: 33px;
+}
+
+.group {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+
+}
+
+.twitter,
+.linkedin,
+.youtube {
+    color: #b5b7bb;
+}

@@ -1,0 +1,103 @@
+main {
+    background-color: #08101e;
+    padding-top: 160px;
+}
+
+.main-left {
+    width: 604px;
+}
+
+.main-box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 197px;
+}
+
+.main-subtitle {
+    color: #3A68B8;
+    font-family:$font-family;
+    @include text(18px,600,normal);
+    line-height: 160%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.main-title {
+    color:$h1color;
+    font-family:$font-family;
+    @include text(55px,800,normal);
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.main-dsc {
+    color: #b5b7bb;
+    font-family:$font-family;
+    @include text(18px,600,normal);
+    line-height: 160%;
+    margin-bottom: 50px;
+}
+
+.button-link {
+    background: $btn-color;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-family: $font-family;
+    @include text(20px,600,normal);
+    line-height: 27px;
+    color:$h1color;
+    margin-right: 20px;
+    border: 1px solid transparent;
+}
+
+.button-link:last-of-type {
+    margin-right: 0;
+}
+
+.button-link:hover {
+    color:$btn-color;
+    background: transparent;
+    border: 1px solid $btn-color;
+}
+
+.button-box {
+    display: flex;
+}
+
+.button-video {
+    display: flex;
+    background-color:$btn-color;
+    border-radius: 5px;
+    align-items: baseline;
+    flex-direction: row-reverse;
+    padding-top: 15px;
+}
+
+.fa-play {
+    height: 24px;
+    color: $h1color;
+    padding-left: 30px;
+}
+
+.button-watch {
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 30px;
+    font-family: $font-family;
+    @include text(20px,600,normal);
+    line-height: 27px;
+    color:$h1color;
+}
+
+
+.button-video:hover {
+    color:$btn-color;
+    background: transparent;
+    border: 1px solid $btn-color;
+}
+
+.button-watch:hover,
+.fa-play:hover {
+    color: $btn-color;
+    background: transparent;
+}

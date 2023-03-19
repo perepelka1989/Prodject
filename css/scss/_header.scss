@@ -1,0 +1,23 @@
+.header {
+    background-color: $header-bg-color;
+}
+
+.container {
+    width: container-width;
+    margin: 0 auto;
+}
+
+.header-link {
+    color:$h1color;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 40px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+}
