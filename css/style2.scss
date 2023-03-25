@@ -47,6 +47,11 @@ body {
 .about-right {
     width: 484px;
     padding-top: 117px;
+    &__button-link {
+        margin-right: 20px;
+        margin-bottom: 117px;
+        padding: 15px 30px;
+    }
 }
 
 .about-title {
@@ -63,29 +68,6 @@ body {
     line-height: 160%;
     color: #b5b7bb;
     padding-bottom: 50px;
-}
-
-.button-link-article {
-    background: $btn-color;
-    border-radius: 5px;
-    padding: 15px 30px;
-    font-family: $font-family;
-    @include text(20px,600,normal);
-    line-height: 27px;
-    color: $h1color;
-    margin-right: 20px;
-    border: 1px solid transparent;
-    margin-bottom: 117px;
-}
-
-.button-link-article:last-of-type {
-    margin-right: 0;
-}
-
-.button-link-article:hover {
-    color: $btn-color;
-    background: transparent;
-    border: 1px solid $btn-color;
 }
 
 @import "scss/awards";
