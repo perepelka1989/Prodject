@@ -17,6 +17,12 @@
     padding: 40px;
 }
 
+.header-link:hover {
+transform: translate(0,10px) scale(2);
+text-decoration: none;
+color:#fff;
+}
+
 .header-nav {
     display: flex;
     justify-content: center;

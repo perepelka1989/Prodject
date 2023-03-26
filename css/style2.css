@@ -7,6 +7,70 @@ a {
   text-decoration: none;
 }
 
+@-webkit-keyframes myAnim {
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+@keyframes myAnim {
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes myAnim {
+  0%, 100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  10% {
+    transform: rotate(8deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(-10deg);
+  }
+  30%, 50%, 70% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  90% {
+    transform: rotate(8deg);
+  }
+}
 body {
   background-color: #020a18;
 }
@@ -28,6 +92,12 @@ body {
   font-size: 16px;
   line-height: 22px;
   padding: 40px;
+}
+
+.header-link:hover {
+  transform: translate(0, 10px) scale(2);
+  text-decoration: none;
+  color: #fff;
 }
 
 .header-nav {
@@ -105,6 +175,7 @@ main {
   color: #3A68B8;
   background: transparent;
   border: 1px solid #3A68B8;
+  transform: scale(2) rotate(360deg);
 }
 .button-link_red {
   background-color: red;
@@ -149,6 +220,8 @@ main {
   color: #3A68B8;
   background: transparent;
   border: 1px solid #3A68B8;
+  -webkit-animation: myAnim 1s ease 0s 1 normal forwards;
+          animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
 .button-watch:hover,
@@ -165,6 +238,11 @@ main {
 .logo {
   background-color: #08101e;
   padding-bottom: 99px;
+}
+
+.logo-pic:hover {
+  -webkit-animation: myAnim 1s ease 0s 1 normal forwards;
+          animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
 .about-box {
@@ -283,6 +361,16 @@ main {
   flex-direction: column;
   padding: 30px;
   border-radius: 10px;
+}
+
+.elem1:hover,
+.elem2:hover,
+.elem3:hover,
+.elem4:hover,
+.elem5:hover {
+  transform: scale(2, 2);
+  background-color: rgba(128, 128, 128, 0.24);
+  border: 1px solid rgba(128, 128, 128, 0.24);
 }
 
 .elem-left {

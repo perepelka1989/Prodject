@@ -35,6 +35,10 @@ body {
     padding-bottom: 99px;
 }
 
+.logo-pic:hover {
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
 .about-box {
     display: flex;
     justify-content: space-between;

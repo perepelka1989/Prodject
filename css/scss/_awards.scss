@@ -76,6 +76,16 @@
     border-radius: 10px;
 }
 
+.elem1:hover,
+.elem2:hover,
+.elem3:hover,
+.elem4:hover,
+.elem5:hover {
+    transform: scale(2,2);
+    background-color: rgba(128, 128, 128, 0.24);
+    border:1px solid  rgba(128, 128, 128, 0.24);
+}
+
 .elem-left {
     background-color: #132035;
     flex-basis: 754px;

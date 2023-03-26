@@ -62,6 +62,7 @@ main {
         color: $btn-color;
         background: transparent;
         border: 1px solid $btn-color;
+        transform:scale(2) rotate(360deg);
     }
 
     &_red {
@@ -85,6 +86,7 @@ main {
     padding-top: 15px;
     transition: all 1s;
     border: 1px solid transparent;
+    
 }
 
 .fa-play {
@@ -111,6 +113,7 @@ main {
     color: $btn-color;
     background: transparent;
     border: 1px solid $btn-color;
+    animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
 .button-watch:hover,
