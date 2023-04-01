@@ -110,3 +110,28 @@
     }
 
 }
+
+@media screen and (max-width:376px) {
+    .ftr {
+        max-width:341px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 5%;
+    }
+
+    .information,
+    .about-store,
+    .communities {
+        margin: 5% 2%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .contacts {
+        display: flex;
+        align-items: center;
+    }
+}

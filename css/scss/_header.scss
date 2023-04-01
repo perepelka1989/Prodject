@@ -7,13 +7,6 @@
     margin: 0 auto;
 }
 
-@media screen and (max-width:849px) {
-    .container {
-        max-width: 849px;
-        margin: 0 auto;
-    }
-}
-
 .header-link {
     color: $h1color;
     font-family: $font-family;
@@ -21,7 +14,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
-    padding: 40px;
+    padding: 3%;
 }
 
 .header-link:hover {
@@ -35,3 +28,20 @@
     justify-content: center;
 }
 
+@media screen and (max-width:849px) {
+    .container {
+        max-width: 849px;
+        margin:0 2%;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .container {
+        max-width: 376px;
+}
+.header-link {
+    font-size: 14px;
+    line-height: 19px;
+    padding:3%;
+}
+}

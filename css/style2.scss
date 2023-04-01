@@ -31,15 +31,6 @@ body {
     justify-content: space-between;
 }
 
-@media screen and (max-width:849px) {
-    .flex {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        max-width: 541px;
-        padding: 1%;
-    }
-}
 
 .logo {
     background-color: #08101e;
@@ -50,25 +41,29 @@ body {
     animation: myAnim 1s ease 0s 1 normal forwards;
 }
 
+@media screen and (max-width:849px) {
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 541px;
+        padding: 1%;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 376px;
+    }
+}
 .about-box {
     display: flex;
     justify-content: space-between;
-}
-
-@media screen and (max-width:849px) {
-    .about-box {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .about-pic
-    {
-        padding: 0 87px;
-    }
-
-    .about-right {
-        padding: 0 142px;
-        width: 100%;
-    }
 }
 
 .about-ai {
@@ -100,6 +95,42 @@ body {
     line-height: 160%;
     color: #b5b7bb;
     padding-bottom: 50px;
+}
+
+@media screen and (max-width:849px) {
+    .about-box {
+        max-width: 849px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+
+    .about-right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .about-box {
+        max-width: 376px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+    }
+    .about-pic
+    {
+        width: 342px;
+    }
+
+    .about-right {
+      text-align: center;
+    }
+
+    .about-title {
+        font-size: 24px;
+    }
 }
 
 @import "scss/awards";
