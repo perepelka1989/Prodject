@@ -1,18 +1,21 @@
 .footer {
-    background-color:$footer-bg-color ;
+    background-color: $footer-bg-color ;
 }
 
 .ftr {
     display: flex;
     justify-content: flex-start;
-    padding: 48px 0;
-    gap: 170px;
+    padding: 4% 0;
+    gap: 15%;
 }
 
 .information,
 .about-store,
 .communities {
-    width: 362px;
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-items: stretch;
 }
 
 .inform-title,
@@ -35,22 +38,24 @@
     line-height: 16px;
     color: #FFF;
     opacity: 0.6;
-    margin-top: 33px;
+    margin-top: 3%;
 }
 
 .contacts {
+    width: 100%;
     display: flex;
-    gap: 24px;
+    gap: 2%;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 33px;
+    margin-top: 3%;
 }
 
 .mail-box,
 .tel-box,
 .address-box {
+    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .fa-envelope,
@@ -58,13 +63,13 @@
 .fa-map-marker {
     color: #FFF;
     font-size: 13px;
-    padding-right: 10px;
+    padding-right: 1%;
 }
 
 .mail,
 .tel,
 .address,
-.site  {
+.site {
     font-family: $footer-font-family;
     font-style: normal;
     font-weight: 500;
@@ -74,13 +79,13 @@
 }
 
 .communities-link {
-    margin-top: 33px;
+    margin-top: 3%;
 }
 
 .group {
-    margin-top: 24px;
+    margin-top: 2%;
     display: flex;
-    gap: 24px;
+    gap: 2%;
 
 }
 
@@ -88,4 +93,20 @@
 .linkedin,
 .youtube {
     color: #b5b7bb;
+}
+
+@media screen and (max-width:849px) {
+    .ftr {
+        max-width: 849px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 5%;
+    }
+
+    .information,
+    .about-store,
+    .communities {
+        margin: 2%;
+    }
+
 }

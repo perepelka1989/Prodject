@@ -1,32 +1,33 @@
 .client-box {
-    width: 1146px;
+    max-width: 1148px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 221px;
-    padding: 14px 0 25px;
+    margin-bottom: 19%;
+    padding: 1% 0 2%;
 }
 
 .client-left-box {
-    width: 548px;
+    width: 48%;
 }
 
 .client-title {
     font-family: $font-family;
-    @include text(40px,700,normal);
+    @include text(40px, 700, normal);
     line-height: 130%;
-    color:$h1color;
-    margin-bottom: 40px;
+    color: $h1color;
+    margin-bottom: 7%;
 }
 
 .client-dsc {
     font-family: $font-family;
-    @include text(16px,600,normal);
+    @include text(16px, 600, normal);
     line-height: 160%;
     color: #FFF;
     opacity: 0.7;
-    width: 460px;
+    width: 70%;
 }
 
 .client-dsc p {
-    margin-top: 20px;
+    margin-top: 5%;
 }
+

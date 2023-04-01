@@ -13,12 +13,12 @@ body {
     background-color: $body-bg-color;
 }
 
-@mixin text ($fs,$fw,$fst) {
-    font-size:$fs;
-    font-weight:$fw;
-    font-style:$fst;
+@mixin text ($fs, $fw, $fst) {
+    font-size: $fs;
+    font-weight: $fw;
+    font-style: $fst;
 }
-    
+
 
 
 @import "scss/header";
@@ -26,8 +26,19 @@ body {
 @import "scss/main";
 
 .flex {
+    max-width:$container-width;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width:849px) {
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 541px;
+        padding: 1%;
+    }
 }
 
 .logo {
@@ -44,13 +55,30 @@ body {
     justify-content: space-between;
 }
 
+@media screen and (max-width:849px) {
+    .about-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-pic
+    {
+        padding: 0 87px;
+    }
+
+    .about-right {
+        padding: 0 142px;
+        width: 100%;
+    }
+}
+
 .about-ai {
     margin-top: 157px;
 }
 
 .about-right {
-    width: 484px;
+    width: 100%;
     padding-top: 117px;
+
     &__button-link {
         margin-right: 20px;
         margin-bottom: 117px;
@@ -60,7 +88,7 @@ body {
 
 .about-title {
     font-family: $font-family;
-    @include text(40px,700,normal);
+    @include text(40px, 700, normal);
     line-height: 130%;
     color: $h1color;
     padding-bottom: 30px;
@@ -68,7 +96,7 @@ body {
 
 .about-dsc {
     font-family: $font-family;
-    @include text(16px,600,normal);
+    @include text(16px, 600, normal);
     line-height: 160%;
     color: #b5b7bb;
     padding-bottom: 50px;

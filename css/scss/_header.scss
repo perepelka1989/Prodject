@@ -3,12 +3,19 @@
 }
 
 .container {
-    width: container-width;
+    max-width: $container-width;
     margin: 0 auto;
 }
 
+@media screen and (max-width:849px) {
+    .container {
+        max-width: 849px;
+        margin: 0 auto;
+    }
+}
+
 .header-link {
-    color:$h1color;
+    color: $h1color;
     font-family: $font-family;
     font-style: normal;
     font-weight: 600;
@@ -18,12 +25,13 @@
 }
 
 .header-link:hover {
-transform: translate(0,10px) scale(2);
-text-decoration: none;
-color:#fff;
+    transform: translate(0, 10px) scale(2);
+    text-decoration: none;
+    color: #fff;
 }
 
 .header-nav {
     display: flex;
     justify-content: center;
 }
+

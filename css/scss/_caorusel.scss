@@ -1,14 +1,37 @@
+.slide {
+    width: 50%;
+}
 
 #demo {
-    width: 573px;
+    width: 100%;
 }
 
 .carousel-inner img {
-    width: 573px;
-    height: 492px;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
 
 .carousel-caption {
     color: #b5b7bb;
     background-color: #08101e;
+}
+
+@media screen and (max-width:849px) {
+    .client-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0 5%;
+    }
+
+    .client-left-box {
+        width: 64%;
+        margin-bottom: 12%;
+    }
+
+    .slide {
+        max-width: 100%;
+        margin-bottom: 26%;
+    }
 }

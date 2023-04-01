@@ -3,16 +3,38 @@ main {
     padding-top: 160px;
 }
 
-.main-left {
-    width: 604px;
-}
-
 .main-box {
+    max-width: 1148px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 197px;
+    padding-bottom: 17%;
 }
 
+.main-left {
+    width: 56%;
+}
+
+@media screen and (max-width:849px) {
+    .main-box {
+        max-width: 849px;
+        margin: 0 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-left {
+        width: 70%;
+    }
+
+    .button-box {
+        display: flex;
+        justify-content: start;
+    }
+    .main-pic {
+        margin-top: 15%;
+    }
+}
 .main-subtitle {
     color: #3A68B8;
     font-family: $font-family;
@@ -66,7 +88,7 @@ main {
     }
 
     &_red {
-        background-color: red;
+        background-color: $btn-color;
     }
 }
 
