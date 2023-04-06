@@ -55,7 +55,7 @@ main {
     background: $btn-color;
     border-radius: 5px;
     font-family: $font-family;
-    @include text(20px, 600, normal);
+    @include text(130%, 600, normal);
     line-height: 27px;
     color: $h1color;
     transition: all 1s;
@@ -104,7 +104,7 @@ main {
     padding-left: 10px;
     padding-right: 30px;
     font-family: $font-family;
-    @include text(20px, 600, normal);
+    @include text(130%, 600, normal);
     line-height: 27px;
     color: $h1color;
     transition: all 1s;

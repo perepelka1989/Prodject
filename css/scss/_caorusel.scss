@@ -1,20 +1,21 @@
 .slide {
     width: 50%;
+    max-height: 43%;
 }
 
 #demo {
     width: 100%;
 }
 
-.carousel-inner img {
-    max-width: 100%;
-    height: auto;
+.carousel-item img {
     vertical-align: middle;
+    background-size: cover;
 }
 
 .carousel-caption {
     color: #b5b7bb;
     background-color: #08101e;
+    font-size: 100%;
 }
 
 @media screen and (max-width:849px) {
@@ -31,7 +32,8 @@
     }
 
     .client-dsc {
-        width: 100%;}
+        width: 100%;
+    }
 
     .slide {
         max-width: 100%;

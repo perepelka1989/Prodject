@@ -7,6 +7,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%
+}
+
 @import "scss/vars";
 
 body {
@@ -26,9 +30,10 @@ body {
 @import "scss/main";
 
 .flex {
-    max-width:$container-width;
+    max-width: $container-width;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
@@ -61,6 +66,7 @@ body {
         max-width: 376px;
     }
 }
+
 .about-box {
     display: flex;
     justify-content: space-between;
@@ -104,7 +110,7 @@ body {
         flex-wrap: wrap;
         align-content: center;
     }
-    
+
 
     .about-right {
         width: 100%;
@@ -119,13 +125,13 @@ body {
         align-items: center;
         padding: 2%;
     }
-    .about-pic
-    {
-        width: 342px;
+
+    .about-pic {
+        max-width: 342px;
     }
 
     .about-right {
-      text-align: center;
+        text-align: center;
     }
 
     .about-title {
