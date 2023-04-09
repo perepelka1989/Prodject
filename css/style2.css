@@ -83,6 +83,23 @@ body {
   background-color: #020a18;
 }
 
+.ancor {
+  margin: 20px auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 130%;
+  color: #FFF;
+  text-align: center;
+}
+
+.ancor:hover {
+  text-decoration: none;
+  -webkit-animation: myAnim 1s ease 0s 1 normal forwards;
+          animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
 .header {
   background-color: #08101d;
   position: fixed;

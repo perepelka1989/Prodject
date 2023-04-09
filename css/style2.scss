@@ -27,7 +27,19 @@ body {
     font-style: $fst;
 }
 
+.ancor {
 
+    margin: 20px auto;
+    font-family: $font-family;
+    @include text(40px, 700, normal);
+    line-height: 130%;
+    color: $h1color;
+    text-align: center;}
+
+    .ancor:hover {
+        text-decoration: none;
+    animation: myAnim 1s ease 0s 1 normal forwards;
+}
 
 @import "scss/header";
 
@@ -52,7 +64,7 @@ body {
 
 @media screen and (max-width:849px) {
     .flex {
-        max-width:849px;
+        max-width: 849px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
