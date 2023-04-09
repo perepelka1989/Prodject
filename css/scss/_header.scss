@@ -1,6 +1,10 @@
 .header {
     background-color: $header-bg-color;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
+
 
 .container {
     max-width: $container-width;
@@ -31,17 +35,18 @@
 @media screen and (max-width:849px) {
     .container {
         max-width: 849px;
-        margin:0 auto;
+        margin: 0 auto;
     }
 }
 
 @media screen and (max-width:376px) {
     .container {
         max-width: 376px;
-}
-.header-link {
-    font-size: 14px;
-    line-height: 19px;
-    padding:3%;
-}
+    }
+
+    .header-link {
+        font-size: 14px;
+        line-height: 19px;
+        padding: 3%;
+    }
 }

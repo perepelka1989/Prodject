@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -81,6 +85,9 @@ body {
 
 .header {
   background-color: #08101d;
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 
 .container {
@@ -255,7 +262,7 @@ main {
 @media screen and (min-width: 377px) and (max-width: 849px) {
   .main-box {
     max-width: 849px;
-    margin: 0 5%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -327,6 +334,7 @@ main {
 
 @media screen and (max-width: 849px) {
   .flex {
+    max-width: 849px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -546,7 +554,6 @@ main {
 
 .container-grid {
   display: grid;
-  grid-template-rows: repeat(3, 34%);
   grid-template-columns: repeat(3, 30%);
   justify-content: center;
   gap: 2.5%;
@@ -570,9 +577,37 @@ main {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 849px) {
+  .awards-grid {
+    max-width: 849px;
+    margin: 23% auto 21%;
+  }
+  .container-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 3fr);
+    grid-template-columns: 80%;
+    justify-content: center;
+    gap: 2.5%;
+    margin: 0 5%;
+  }
+  .item3,
+.item4,
+.item5 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #132035;
+    padding: 2.6%;
+    border-radius: 10px;
+  }
+  .item-left,
+.item1,
+.item2 {
+    display: none;
+  }
+}
 .client-box {
   max-width: 1148px;
-  max-height: 492px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 19%;
@@ -610,7 +645,6 @@ main {
 
 .slide {
   width: 50%;
-  max-height: 43%;
 }
 
 #demo {

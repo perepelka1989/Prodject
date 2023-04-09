@@ -13,6 +13,7 @@
     margin-top: 23%;
     margin-bottom: 21%;
 }
+
 .awards-box {
     margin: 0 auto;
     max-width: 1148px;
@@ -39,7 +40,7 @@
 .elem4-about,
 .elem5-about {
     @extend .elemm;
-    padding:2.6%;
+    padding: 2.6%;
 }
 
 .elem-left-about {
@@ -67,7 +68,7 @@
 .elem2,
 .elem3 {
     background-color: #132035;
-    width: 31,5%;
+    width: 31, 5%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -135,8 +136,7 @@
 
 .container-grid {
     display: grid;
-    grid-template-rows:repeat(3,34%);
-    grid-template-columns: repeat(3,30%);
+    grid-template-columns: repeat(3, 30%);
     justify-content: center;
     gap: 2.5%;
 }
@@ -157,4 +157,38 @@
     background-color: #132035;
     padding: 2.6%;
     border-radius: 10px;
+}
+
+
+@media screen and (max-width:849px) {
+    .awards-grid {
+        max-width: 849px;
+        margin: 23% auto 21%;
+    }
+
+    .container-grid {
+        display: grid;
+        grid-template-rows: repeat(3, 3fr);
+        grid-template-columns: 80%;
+        justify-content: center;
+        gap: 2.5%;
+        margin:0 5%;
+    }
+
+    .item3,
+    .item4,
+    .item5 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #132035;
+        padding: 2.6%;
+        border-radius: 10px;
+    }
+
+    .item-left,
+    .item1,
+    .item2 {
+        display: none;
+    }
 }
